@@ -6,11 +6,10 @@ public class SumAverageRunningInt {
         int number = LOWERBOUND;
         final int UPPERBOUND = 100;
 
-        while(number <= UPPERBOUND) {
+        do {
             sum += number;
             ++number;
-        }
-
+        } while(number <= UPPERBOUND);
         System.out.println("The sum is: " + sum);
     }
 }
