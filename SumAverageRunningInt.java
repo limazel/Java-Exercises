@@ -3,15 +3,14 @@ public class SumAverageRunningInt {
         int sum = 0;
         double average;
         final int LOWERBOUND = 1;
+        int number = LOWERBOUND;
         final int UPPERBOUND = 100;
 
-        for(int number = LOWERBOUND; number <= UPPERBOUND; number++) {
+        while(number <= UPPERBOUND) {
             sum += number;
+            ++number;
         }
 
-        average = (double) sum / (UPPERBOUND - LOWERBOUND + 1);
-
-        System.out.println("The sum is " + sum);
-        System.out.println("The average is " + average); 
+        System.out.println("The sum is: " + sum);
     }
 }
